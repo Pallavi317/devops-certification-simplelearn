@@ -4,8 +4,6 @@ pipeline {
 
     registry = "pallavi173/devops-certification-simplilearn"
 
-    registryCredential = 'dockerhub'
-
   }
 
   agent any
