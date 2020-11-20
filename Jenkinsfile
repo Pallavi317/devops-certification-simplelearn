@@ -2,7 +2,7 @@ pipeline {
 
   environment {
     registry = "pallavi173/devops-certification-simplilearn"
-    registryCredential = 'Ericsson@173'
+    registryCredential = 'dockerhub'
   }
   agent any
   stages {
@@ -16,7 +16,7 @@ pipeline {
     stage('Deploy Image') {
       steps{
         script {
-          docker.withRegistry( '', registryCredential ) {
+          docker.withRegistry( '', 'dockerhub' ) {
             dockerImage.push()
           }
         }
