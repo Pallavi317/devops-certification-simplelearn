@@ -3,7 +3,7 @@ pipeline {
   environment {
 
     registry = "pallavi173/devops-certification-simplilearn"
-
+    registryCredential = 'Ericsson@173'
   }
 
   agent any
